@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 10){
+if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 100000){
 echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
 }
 else{

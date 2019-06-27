@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php use ("PHP\ValidaUrl.php");?>
 <head>
 
     <meta charset="utf-8">

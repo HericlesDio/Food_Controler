@@ -18,7 +18,7 @@ $email = $linha['login'];
 
 if($email ==""){
 $pdo = new PDO('mysql:host=localhost;dbname=foodcontroler;charset=utf8', "root", "");
-$sql = "insert into usuario (nome, sobrenome , login , senha, )  Values(?,?,?,?,?)";
+$sql = "insert into usuario (nome, sobrenome , login , senha, tipousu)  Values(?,?,?,?,?)";
 $query = $pdo->prepare($sql);
 $query->execute(array($nome,$sobrenome,$login,$senha,$TipoUsu));
 $pdo = null;

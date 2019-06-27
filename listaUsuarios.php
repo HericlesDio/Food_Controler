@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+ require_once ("PHP\ValidaUrl.php");
+ require_once ("PHP\bloqueios.php");
+ ?>
+
+
 <head>
 
     <meta charset="utf-8">
