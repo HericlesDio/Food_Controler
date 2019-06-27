@@ -407,7 +407,7 @@
                             <div class="modal-body"> Se selecionar "Sair", você encerrara sua sessão ao sistema, tem certeza ?.</div>
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <a class="btn btn-primary" href="login.php">Sair</a>
+                                <input type = "submit" class="btn btn-primary" href="login.php" value="Sair" name = "sair" action = "bloqueios.php" method="POST" />
                             </div>
                         </div>
                     </div>
