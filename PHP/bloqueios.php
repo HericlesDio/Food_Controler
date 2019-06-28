@@ -1,9 +1,7 @@
 <?php
 session_start();
-
-echo $_POST['sair'];
-
-if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 100000){
+ 
+if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 440){
 echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
 }
 else{
@@ -13,7 +11,7 @@ else{
     echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/login.php');</script>";
     header("Cache-Control: no-cache, must-revalidate");
     header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
+    die;
 }
-
 
 ?>

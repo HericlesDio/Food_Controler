@@ -1,4 +1,6 @@
 <?php
+require_once ('bloqueios.php');
+
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $login = $_POST['login'];

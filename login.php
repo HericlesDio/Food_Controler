@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+require_once ('PHP\desconecta.php');
+?>
 <head>
 
     <meta charset="utf-8">

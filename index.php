@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
-<?php require_once ("PHP\ValidaUrl.php");?>
-<?php require_once ("PHP\bloqueios.php");?>
+<?php
+ header("Cache-Control: no-cache, must-revalidate");
+ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
+ require_once ("PHP\ValidaUrl.php");
+ require_once ("PHP\bloqueios.php");
+ ?>
 
 <html lang="en">
 <head>
@@ -87,7 +91,7 @@
                         <h6 class="collapse-header">
                         </h6>
                         <a class="collapse-item" href="cadastroUsuarios.php"> Cadastro de usuarios </a>
-                        <a class="collapse-item" href="listaUsuarios.php">Lista de Usuarios</a>
+                        <a class="collapse-item" href="login.php">Lista de Usuarios</a>
                     </div>
                 </div>
             </li>
@@ -407,7 +411,7 @@
                             <div class="modal-body"> Se selecionar "Sair", você encerrara sua sessão ao sistema, tem certeza ?.</div>
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <input type = "submit" class="btn btn-primary" href="login.php" value="Sair" name = "sair" action = "bloqueios.php" method="POST" />
+                                <a class="btn btn-primary" href="login.php">Sair</a>
                             </div>
                         </div>
                     </div>

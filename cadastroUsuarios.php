@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once ("PHP\ValidaUrl.php");?>
-<?php require_once ("PHP\bloqueios.php");?>
+<?php
+ header("Cache-Control: no-cache, must-revalidate");
+ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
+ require_once ("PHP\ValidaUrl.php");
+ require_once ("PHP\bloqueios.php");
+ ?>
 <head>
 
     <meta charset="utf-8">
@@ -28,7 +32,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -40,7 +44,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -64,9 +68,9 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Componentes - Produtos
                         </h6>
-                        <a class="collapse-item" href="listaProdutos.php">Lista de produtos
+                        <a class="collapse-item" href="listaProdutos.html">Lista de produtos
                                 </a>
-                        <a class="collapse-item" href="cadastroProdutos.php">Cadastro de produtos</a>
+                        <a class="collapse-item" href="cadastroProdutos.html">Cadastro de produtos</a>
                     </div>
                 </div>
             </li>
@@ -82,8 +86,8 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">
                         </h6>
-                        <a class="collapse-item" href="cadastroUsuarios.php"> Cadastro de usuarios </a>
-                        <a class="collapse-item" href="listaUsuarios.php">Lista de Usuarios</a>
+                        <a class="collapse-item" href="cadastroUsuarios.html"> Cadastro de usuarios </a>
+                        <a class="collapse-item" href="listaUsuarios.html">Lista de Usuarios</a>
                     </div>
                 </div>
             </li>
@@ -226,7 +230,7 @@
                             <div class="modal-body"> Se selecionar "Sair", você encerrara sua sessão ao sistema, tem certeza ?</div>
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                                <a class="btn btn-primary" href="login.php">Sair</a>
+                                <a class="btn btn-primary" href="login.html">Sair</a>
                             </div>
                         </div>
                     </div>
@@ -269,8 +273,8 @@
                                                 <div class="col-sm-6">
                                                     <select class="form-control" id="perfisAcesso" name="TipoUsu" >
                                                         <option selected>Perfis de acesso: </option>
-                                                        <option value="admin"> administrador </option>
-                                                        <option value="func"> funcionario </option>
+                                                        <option value="admin"> Administrador </option>
+                                                        <option value="func"> Funcionário </option>
                                                     </select>
                                                 </div>
                                             </div>
