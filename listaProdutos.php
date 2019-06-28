@@ -6,6 +6,7 @@ header("Cache-Control: no-cache, must-revalidate");
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
 require_once ("PHP\ValidaUrl.php");
 require_once ("PHP\bloqueios.php");
+require_once ("PHP\dados.php");
  ?>
 
 <head>
@@ -261,7 +262,7 @@ require_once ("PHP\bloqueios.php");
                                     <tbody>
                                         <tr>
                                             <td>001</td>
-                                            <td>Pão de gergilin</td>
+                                            <td><?php echo $teste ?></td>
                                             <td>25</td>
                                             <td>Pão</td>
                                             <td>Padaria Mix</td>

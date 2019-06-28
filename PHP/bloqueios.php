@@ -1,12 +1,12 @@
 <?php
 session_start();
  
-if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 440){
+if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 1000000){
 echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
 }
 else{
     unset($_SESSION['horarioLogin']);
-    $_SESSION['logado'] = 'NAO';
+    unset($_SESSION['logado']);
     echo "<script>alert('Usuario Desconectado!')</script>";
     echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/login.php');</script>";
     header("Cache-Control: no-cache, must-revalidate");

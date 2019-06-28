@@ -32,3 +32,4 @@ echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/ind
     echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
 }
 ?>
+820,47
