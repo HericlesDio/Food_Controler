@@ -260,55 +260,19 @@ require_once ("PHP\dados.php");
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>001</td>
-                                            <td><?php echo $teste ?></td>
-                                            <td>25</td>
-                                            <td>Pão</td>
-                                            <td>Padaria Mix</td>
-                                            <td> 02/05/2019 </td>
-                                        </tr>
-                                        <tr>
-                                            <td>002</td>
-                                            <td>Hamburguer</td>
-                                            <td>40</td>
-                                            <td>Carne</td>
-                                            <td>PIFPAF</td>
-                                            <td>02/06/2019</td>
-                                        </tr>
-                                        <tr>
-                                            <td>003</td>
-                                            <td>Refrigerante de laranja</td>
-                                            <td>50 </td>
-                                            <td>Bebida</td>
-                                            <td>Fanta</td>
-                                            <td>01/02/2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td>004</td>
-                                            <td>Copos descartaveis</td>
-                                            <td>60</td>
-                                            <td>Utensilios</td>
-                                            <td>Plasticos SA</td>
-                                            <td>02/05/2019</td>
-                                        </tr>
-                                        <tr>
-                                            <td>005</td>
-                                            <td>Canudos</td>
-                                            <td>100</td>
-                                            <td>Utensilios</td>
-                                            <td>Plasticos SA</td>
-                                            <td>05/12/2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td>006</td>
-                                            <td>Molho Barbecue</td>
-                                            <td>200</td>
-                                            <td>Temperos</td>
-                                            <td>Krust Ltda</td>
-                                            <td>02/05/2019</td>
-                                        </tr>
-
+                                    <?php $cont = 0;?>
+                                    <?php while($cont < $i){?>
+                                            <tr>
+                                            <td><?php echo $produtosSeparados[$cont][0]?></td>
+                                            <td><?php echo $produtosSeparados[$cont][1]?></td>
+                                            <td><?php echo $produtosSeparados[$cont][2]?></td>
+                                            <td><?php echo $produtosSeparados[$cont][3]?></td>
+                                            <td><?php echo $produtosSeparados[$cont][4]?></td>
+                                            <td><?php echo $produtosSeparados[$cont][5]?></td>
+                                            <?php $cont++;?>                                
+                                            </tr>
+                                    <?php }?>
+                                    </strong>
                                     </tbody>
                                 </table>
                             </div>

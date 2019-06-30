@@ -26,10 +26,10 @@ $query->execute(array($nome,$sobrenome,$login,$senha,$TipoUsu));
 $pdo = null;
 
 echo"<script>alert('cadastro realizado!');</script>";
-echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
+echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroUsuarios.php');</script>";
 }else{
     echo "<script>alert('Usuario Existente!');</script>";
-    echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
+    echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroUsuarios.php');</script>";
+    die;
 }
 ?>
-820,47

@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -46,7 +46,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -70,9 +70,9 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Componentes - Produtos
                         </h6>
-                        <a class="collapse-item" href="listaProdutos.html">Lista de produtos
+                        <a class="collapse-item" href="listaProdutos.php">Lista de produtos
                         </a>
-                        <a class="collapse-item" href="cadastroProdutos.html">Cadastro de produtos</a>
+                        <a class="collapse-item" href="cadastroProdutos.php">Cadastro de produtos</a>
                     </div>
                 </div>
             </li>
@@ -88,8 +88,8 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">
                         </h6>
-                        <a class="collapse-item" href="cadastroUsuarios.html"> Cadastro de usuarios </a>
-                        <a class="collapse-item" href="listaUsuarios.html">Lista de Usuarios</a>
+                        <a class="collapse-item" href="cadastroUsuarios.php"> Cadastro de usuarios </a>
+                        <a class="collapse-item" href="listaUsuarios.php">Lista de Usuarios</a>
                     </div>
                 </div>
             </li>
@@ -232,27 +232,29 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4 ">Cadastro de Produto!</h1>
                                         </div>
-                                        <form class="user ">
+                                        <form class="user"  action= "PHP\cadastroProd.php"  method="POST">
                                             <div class="form-group row ">
                                                 <div class="col-sm-6 mb-3 mb-sm-0 ">
-                                                    <input type="text " class="form-control form-control-user " id="exampleNome " placeholder="Nome ">
+                                                    <input type="text " class="form-control form-control-user " id="exampleNome " name="nome" placeholder="Nome ">
                                                 </div>
                                                 <div class="col-sm-6 ">
-                                                    <input type="text " class="form-control form-control-user " id="exampleQuantidade " placeholder="Quantidade ">
+                                                    <input type="number" class="form-control form-control-user " id="exampleQuantidade " name="quantidade" placeholder="Quantidade ">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <input type="text " class="form-control form-control-user " id="exampleTipProduto " placeholder="Tipo de Produto ">
+                                                <input type="text " class="form-control form-control-user " id="exampleTipProduto " name="tipoProd" placeholder="Tipo de Produto ">
+                                            </div>
+                                            <div class="form-group row">
+                                                <input type="text" class="form-control form-control-user " id="exampleTipProduto " name="dataCad" placeholder="Data de Cadastro">
                                             </div>
                                             <div class="form-group row ">
-                                                <input type="text " class="form-control form-control-user " id="exampleFornecedor " placeholder="Fornecedor ">
+                                                <input type="text" class="form-control form-control-user " id="exampleFornecedor " name="fornecedor" placeholder="Fornecedor ">
                                                 <br>
                                                 <br>
                                                 <br>
-                                                <a href="listaProdutos.html" class="btn btn-primary btn-user btn-block ">
-							                 Cadastrar Produto
-						                    </a>
                                             </div>
+                                                <input type="submit" value="Cadastrar Produto" class="btn btn-primary btn-user btn-block "/>
+                                            </form>
                                     </div>
                                     <!-------------------------------------- Fim cadastro de produtos ----------------------------->
                                 </div>
@@ -272,7 +274,7 @@
                                 <div class="modal-body "> Se selecionar "Sair ", você encerrara sua sessão ao sistema, tem certeza ?.</div>
                                 <div class="modal-footer ">
                                     <button class="btn btn-secondary " type="button " data-dismiss="modal ">Cancelar</button>
-                                    <a class="btn btn-primary " href="login.html ">Sair</a>
+                                    <a class="btn btn-primary " href="login.php ">Sair</a>
                                 </div>
                             </div>
                         </div>

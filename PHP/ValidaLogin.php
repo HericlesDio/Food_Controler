@@ -19,7 +19,8 @@
      $_SESSION['logado'] = 'SIM';
      $_SESSION['horarioLogin'] = time();
      echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
-	 }
+     $_SESSION['login'] = $_POST['login'];
+    }
 	 
      else{
 	 echo "<script>alert('Email ou senha incorreto!')</script>";
