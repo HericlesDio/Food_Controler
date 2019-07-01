@@ -1,4 +1,7 @@
 <?php
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+
     session_start();
     $pdo = new PDO('mysql:host=localhost;dbname=foodcontroler;charset=utf8', "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -6,7 +6,7 @@ header("Cache-Control: no-cache, must-revalidate");
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
 require_once ("PHP\ValidaUrl.php");
 require_once ("PHP\bloqueios.php");
-require_once ("PHP\dados.php");
+require_once ("PHP\dadosProd.php");
  ?>
 
 <head>
@@ -260,7 +260,7 @@ require_once ("PHP\dados.php");
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    <?php $cont = 0;?>
+                                    <?php $cont = 0?>
                                     <?php while($cont < $i){?>
                                             <tr>
                                             <td><?php echo $produtosSeparados[$cont][0]?></td>

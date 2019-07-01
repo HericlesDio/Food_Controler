@@ -1,4 +1,7 @@
 <?php
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+
 require_once ('bloqueios.php');
 
 $nome = $_POST['nome'];
@@ -6,7 +9,7 @@ $sobrenome = $_POST['sobrenome'];
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $TipoUsu = $_POST['TipoUsu'];
-
+if($nome != "" || $sobrenome != "" || $login != "" || $senha != "" || $TipoUsu != ""){
 $pdo = new PDO('mysql:host=localhost;dbname=foodcontroler;charset=utf8', "root", "");
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -29,6 +32,11 @@ echo"<script>alert('cadastro realizado!');</script>";
 echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroUsuarios.php');</script>";
 }else{
     echo "<script>alert('Usuario Existente!');</script>";
+    echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroUsuarios.php');</script>";
+    die;
+}
+}else{
+    echo "<script>alert('Impossivel Cadastrar no momento!');</script>";
     echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroUsuarios.php');</script>";
     die;
 }

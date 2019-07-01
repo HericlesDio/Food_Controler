@@ -1,12 +1,15 @@
 <?php
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+
 require_once ('bloqueios.php');
 
 $nome = $_POST['nome'];
-$quantidade = $_POST['quatidade'];
+$quantidade = $_POST['quantidade'];
 $tipoProd = $_POST['tipoProd'];
 $dataCad = $_POST['dataCad'];
 $fornecedor = $_POST['fornecedor'];
-
+if($nome != "" || $quantidade != "" || $tipoProd != "" || $dataCad != "" || $fornecedor != ""){
 $pdo = new PDO('mysql:host=localhost;dbname=foodcontroler;charset=utf8', "root", "");
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -35,4 +38,10 @@ else{
     echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroProdutos.php');</script>";
     die;
 }
+}else{
+    echo "<script>alert('Erro Impossivel Adicionar o Produto no Momento!');</script>";
+    echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/cadastroProdutos.php');</script>";
+    die;
+}
+
 ?>

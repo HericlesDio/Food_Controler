@@ -6,6 +6,7 @@ header("Cache-Control: no-cache, must-revalidate");
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
 require_once ("PHP\ValidaUrl.php");
 require_once ("PHP\bloqueios.php");
+require_once ("PHP\dadosUsu.php");
  ?>
 
 
@@ -30,6 +31,8 @@ require_once ("PHP\bloqueios.php");
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
+
+<body id="page-top">
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -257,34 +260,17 @@ require_once ("PHP\bloqueios.php");
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr>
-                                        <td>Bruno</td>
-                                        <td>Vinicius</td>
-                                        <td>bruno@gmail.com</td>
-                                        <td>********</td>
-                                        <td>Funcionario</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Caio</td>
-                                        <td>Junio</td>
-                                        <td>caio@gmail.com</td>
-                                        <td>********</td>
-                                        <td>Administrador</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Davi</td>
-                                        <td>Cabral</td>
-                                        <td>Davi@gmail.com</td>
-                                        <td>********</td>
-                                        <td>Administrador</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luiz</td>
-                                        <td>Gustavo</td>
-                                        <td>Luiz@gmail.com</td>
-                                        <td>********</td>
-                                        <td>Funcionario</td>
-                                    </tr>
+                                <?php $cont = 0?>
+                                    <?php while($cont < $i){?>
+                                            <tr>
+                                            <td><?php echo $usuarioSeparados[$cont][0]?></td>
+                                            <td><?php echo $usuarioSeparados[$cont][1]?></td>
+                                            <td><?php echo $usuarioSeparados[$cont][2]?></td>
+                                            <td>****</td>
+                                            <td><?php echo $usuarioSeparados[$cont][4]?></td>
+                                            <?php $cont++;?>                                
+                                            </tr>
+                                    <?php }?>
                                 </tbody>
                             </table>
                         </div>

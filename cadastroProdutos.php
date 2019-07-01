@@ -5,6 +5,7 @@
  header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
  require_once ("PHP\ValidaUrl.php");
  require_once ("PHP\bloqueios.php");
+ 
  ?>
 <head>
 
@@ -202,20 +203,20 @@
                                         <form class="user"  action= "PHP\cadastroProd.php"  method="POST">
                                             <div class="form-group row ">
                                                 <div class="col-sm-6 mb-3 mb-sm-0 ">
-                                                    <input type="text " class="form-control form-control-user " id="exampleNome " name="nome" placeholder="Nome ">
+                                                    <input type="text " class="form-control form-control-user " id="exampleNome " name="nome" placeholder="Nome" require>
                                                 </div>
                                                 <div class="col-sm-6 ">
-                                                    <input type="number" class="form-control form-control-user " id="exampleQuantidade " name="quantidade" placeholder="Quantidade ">
+                                                    <input type="number" class="form-control form-control-user " id="exampleQuantidade " name="quantidade" placeholder="Quantidade" require>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <input type="text " class="form-control form-control-user " id="exampleTipProduto " name="tipoProd" placeholder="Tipo de Produto ">
+                                                <input type="text " class="form-control form-control-user " id="exampleTipProduto " name="tipoProd" placeholder="Tipo de Produto " require>
                                             </div>
                                             <div class="form-group row">
-                                                <input type="text" class="form-control form-control-user " id="exampleTipProduto " name="dataCad" placeholder="Data de Cadastro">
+                                                <input type="date" class="form-control form-control-user " id="exampleTipProduto " name="dataCad" placeholder="Data de Cadastro" require>
                                             </div>
                                             <div class="form-group row ">
-                                                <input type="text" class="form-control form-control-user " id="exampleFornecedor " name="fornecedor" placeholder="Fornecedor ">
+                                                <input type="text" class="form-control form-control-user " id="exampleFornecedor " name="fornecedor" placeholder="Fornecedor " require>
                                                 <br>
                                                 <br>
                                                 <br>

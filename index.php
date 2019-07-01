@@ -5,6 +5,8 @@
  header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
  require_once ("PHP\ValidaUrl.php");
  require_once ("PHP\bloqueios.php");
+ require_once ("PHP\dadosProd.php");
+ require_once ("PHP/estoqueSit.php");
  ?>
 
 <html lang="en">
@@ -27,7 +29,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" >
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!------------------------------------------ Sidebar------------------------------------------------->
@@ -147,7 +149,7 @@
                         <!---------------------------- Botão de drop( Informação do usuario) ------------------->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Usuario</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $nome ?></span>
                                 <i class="fas fa-user"></i>
                             </a>
                             <!------------------------------Botão de drop (informação do usuario) ------------------->
@@ -198,7 +200,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="font-weight-bold text-primary text-uppercase mb-1">Produtos em Estoque: </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> 40.000 </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $quant?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-cubes fa-2x text-gray-200"></i>
@@ -216,7 +218,7 @@
                                         <div class="col mr-2">
                                             <div class="font-weight-bold text-success text-uppercase mb-1">Valor total em estoque: </div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                R$ 400,000
+                                                --//---//--
                                             </div>
                                         </div>
                                         <div class="col-auto">
@@ -236,7 +238,7 @@
                                             <div class="font-weight-bold text-info text-uppercase mb-1">Situação do Estoque: </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"> Positivo</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $estoque?></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class=>
