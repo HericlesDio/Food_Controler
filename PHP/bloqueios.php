@@ -2,7 +2,7 @@
 session_start();
  
 if($_SESSION['logado'] == "SIM" && time() - $_SESSION['horarioLogin'] <= 1000000){
-echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";
+/**echo "<script>window.location.replace('http://localhost/Food_Controler_26_06/index.php');</script>";*/
 }
 else{
     unset($_SESSION['horarioLogin']);

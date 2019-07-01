@@ -49,14 +49,14 @@ require_once ("PHP\bloqueios.php");
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder=" Digite o Email referente a conta.....">
                                         </div>
-                                        <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                        <a href="login.php" class="btn btn-primary btn-user btn-block">
                                         Renovar Senha
                                         </a>
                                     </form>
                                     <hr>
 
                                     <div class="text-center">
-                                        <a class="small" href="login.html"> Já tem uma conta? Entrar!</a>
+                                        <a class="small" href="login.php"> Já tem uma conta? Entrar!</a>
                                     </div>
                                 </div>
                             </div>

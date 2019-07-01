@@ -25,57 +25,42 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<!--<body class="bg-gradient-primary">-->
+<body id="page-top">
+    <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!------------------------------------------ Sidebar------------------------------------------------->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href= "index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3"> Food Controler </div>
             </a>
-
             <!-- Side Bar atualizada -->
             <hr class="sidebar-divider my-0">
-
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-
             <!-- Dividir tarefas -->
-            <hr class="sidebar-divider">
-
-            <!-- Dividir tarefas -->
-            <div class="sidebar-heading">
-
-            </div>
-
+            <hr class="sidebar-divider"></hr> 
             <!------------------------------------- Nav Item - estoque----------------------------------->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-shopping-cart"></i>
-                    <!----<i class="fas fa-fw fa-cog"></i>-->
                     <span>Estoque</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Componentes - Produtos
-                        </h6>
-                        <a class="collapse-item" href="listaProdutos.html">Lista de produtos
-                                </a>
-                        <a class="collapse-item" href="cadastroProdutos.html">Cadastro de produtos</a>
+                        <h6 class="collapse-header">Componentes - Estoque </h6>
+                        <a class="collapse-item" href="listaProdutos.php"> Lista de produtos </a>
+                        <a class="collapse-item" href="cadastroProdutos.php"> Cadastro de produtos </a>
                     </div>
                 </div>
-            </li>
-            </li>
-
             <!----------------------- Nav Item - Usuarios --------------------------------------->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -84,23 +69,21 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">
-                        </h6>
-                        <a class="collapse-item" href="cadastroUsuarios.html"> Cadastro de usuarios </a>
-                        <a class="collapse-item" href="listaUsuarios.html">Lista de Usuarios</a>
+                        <h6 class="collapse-header">Componentes - Usuarios </h6>
+                        <a class="collapse-item" href="cadastroUsuarios.php"> Cadastro de usuarios </a>
+                        <a class="collapse-item" href="listaUsuarios.php">Lista de Usuarios  </a>
                     </div>
                 </div>
-            </li>
-            </li>
+                </li>
             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block align-content-center">
-
+            <hr class="sidebar-divider d-none d-md-block align-content-center"> 
+            </hr>
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                <button class="rounded-circle border-0" id="sidebarToggle"> </button>
             </div>
-
-        </ul>
+            </ul>
+    
         <!-- End of Sidebar -->
 
         <!------------------------------------------ barra superior ---------------------------------->
@@ -285,6 +268,15 @@
                             </div>
                         </div>
                     </div>
+                      <!---------------------------------- Marca fim da pagina (Copyright) ------------------------->
+                      <footer class="sticky-footer bg-white">
+                                 <div class="container my-auto">
+                                 <div class="copyright text-center my-auto">
+                                <span>Copyright | &copy; Food Controler - 2019</span>
+                                </div>
+                                 </div>
+                                </footer>
+                        <!---------------------------------- Marca fim da pagina (Copyright) -------------------------> 
 
                     <!-- Bootstrap core JavaScript-->
                     <script src="vendor/jquery/jquery.min.js"></script>

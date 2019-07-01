@@ -11964,20 +11964,26 @@ a:focus {
 }
 
 .bg-login-image {
-    background: url(https://source.unsplash.com/4hgYULBzVEE/600x800);
+    background: url(image/picture1.jpg);
     /*background: url(image/lanche.jpg/600x800);*/
     background-position: center;
     background-size: cover;
 }
 
 .bg-register-image {
-    background: url(https://source.unsplash.com/6gbr24z3H5c/600x800);
+    background: url(image/picture2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-register2-image {
+    background: url(image/picture.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .bg-password-image {
-    background: url(https://source.unsplash.com/4hgYULBzVEE/600x800);
+    background: url(image/picture3.jpg);
     background-position: center;
     background-size: cover;
 }
