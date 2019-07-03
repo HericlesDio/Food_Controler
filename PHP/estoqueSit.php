@@ -22,7 +22,7 @@ else if($resultEstoque  >= 20){
     $estoque= "Abaixo da Média";
 
 }
-else if($resultEstoque  == 0){
+else if($resultEstoque  <= 0){
 
     $estoque= "Vazio";
 

@@ -218,7 +218,7 @@
                                         <div class="col mr-2">
                                             <div class="font-weight-bold text-success text-uppercase mb-1">Valor total em estoque: </div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                --//---//--
+                                                R$101.000
                                             </div>
                                         </div>
                                         <div class="col-auto">
